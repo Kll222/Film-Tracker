@@ -3,8 +3,9 @@ from datetime import datetime,timedelta
 import sqlite3
 # 导入需要的模块
 
-API_KEY = '<KEY>'
 BASE_URL = 'https://api.themoviedb.org/3/discover'
+with open('api_key.txt', 'r') as f:
+    API_KEY = f.read().strip()
 # 定义常量和全局配置
 
 def init_db():
@@ -154,3 +155,4 @@ def insert_items(clean_results, conn):
 insert_items(clean_results, conn)
 conn.close()
 # 定义把数据插入数据表的函数
+
