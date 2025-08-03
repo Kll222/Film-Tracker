@@ -8,3 +8,12 @@ A personal script to track daily film and TV releases using TMDb API.使用TMDb 
 2. 运行脚本：
 ```bash
 python main.py
+
+# TV & Movie Release Tracker
+This is a simple Python script to track recent releases of TV shows, movies, and variety programs.
+It uses the TMDb API to fetch data and supports multiple countries including China, Hong Kong, Japan, Korea, the US, the UK, and France.
+## How to Use
+1. Create a file named `api_key.txt` in the project directory, and put your TMDb API key inside (just one line).
+2. Run the script:
+```bash
+python main.py
